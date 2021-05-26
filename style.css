@@ -7,7 +7,7 @@ nav{
   background-color: rgba(199, 199, 199, 0.6);
 }
 
-.container-fluid img{
+.oskar img{
   filter: brightness(75%);
   background-position: center;
   background-repeat: no-repeat;
@@ -53,11 +53,31 @@ nav{
   color: white;
   width: 300px;
   height: auto;
-  margin: 650px 0;
+  margin: 550px 0;
   position: absolute;
   top: 50%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   background-color: rgba(81, 81, 81, 0.6); 
+}
+
+.about-me img{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.text-about{
+  top: 1220px;
+  left: 500px;
+  width: 300px;
+  height: 400px;
+  text-align: justify;
+  position: absolute;
+}
+
+.footer{
+  text-align: center;
 }
