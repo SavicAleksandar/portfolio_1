@@ -5,6 +5,11 @@ body{
 
 nav{
   background-color: rgba(199, 199, 199, 0.6);
+  text-decoration: none;
+}
+
+.navbar-nav{
+  text-decoration: none;
 }
 
 .oskar img{
