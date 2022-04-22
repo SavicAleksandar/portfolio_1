@@ -8,79 +8,14 @@ nav{
   text-decoration: none;
 }
 
-.navbar-nav{
-  text-decoration: none;
+.text-shadow {
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
-.oskar img{
-  filter: brightness(75%);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.container-fluid .btn{
-  align-items: center;
-}
-
-.centered {
-  font-size: 60px;
+.btn{
   color: white;
-  margin: 150px 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.centered .btn{
-  color: white;
-  width: 300px;
   height: auto;
-  margin: 150px 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
   background-color: rgba(81, 81, 81, 0.6); 
-}
-
-.bottom-centered{
-  color: rgba(114, 114, 114, 0.6);
-  width: auto;
-  height: 80px;
-  margin: -160px 0;
-}
-
-.bottom-centered .btn{
-  color: white;
-  width: 300px;
-  height: auto;
-  margin: 550px 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  background-color: rgba(81, 81, 81, 0.6); 
-}
-
-.about-me img{
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.text-about{
-  top: 1220px;
-  left: 500px;
-  width: 300px;
-  height: 400px;
-  text-align: justify;
-  position: absolute;
 }
 
 .footer{
