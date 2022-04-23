@@ -31,7 +31,7 @@
                         <a class="nav-link" aria-current="page" href="#About">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Work</a>
+                        <a class="nav-link" href="#Work">Work</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" type="button" data-bs-toggle="modal" data-bs-target="#GetInTouch" href="#">Get in touch</a>
@@ -42,6 +42,9 @@
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" type="button" data-bs-toggle="modal" data-bs-target="#password" href="#">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" type="button" data-bs-toggle="modal" data-bs-target="#register" href="#">Register</a>
                     </li>
                 </ul>
             </div>
@@ -67,28 +70,28 @@
                     <div class="col-lg-6">
                         <form>
                             <div class="mb-3">
-                            <label for="name" class="col-form-label">Name:</label>
-                            <input type="text" class="form-control" id="name">
+                            <label for="name" class="col-form-label"><i class="bi bi-person-fill p-1"></i>Name:</label>
+                            <input type="text" class="form-control" id="name" placeholder="Name">
                             </div>
                             <div class="mb-3">
-                            <label for="email" class="col-form-label">Email:</label>
-                            <input class="form-control" id="email"></input>
+                            <label for="email" class="col-form-label"><i class="bi bi-envelope-fill p-1"></i>Email:</label>
+                            <input class="form-control" id="email" placeholder="Email"></input>
                             </div>
                             <div class="mb-3">
-                                <label for="phone" class="col-form-label">Phone:</label>
-                                <input class="form-control" id="phone"></input>
+                                <label for="phone" class="col-form-label"><i class="bi bi-telephone-fill p-1"></i>Phone:</label>
+                                <input class="form-control" id="phone" placeholder="Phone"></input>
                             </div>
                             <div class="mb-3">
-                                <label for="adress" class="col-form-label">Adress:</label>
-                                <input class="form-control" id="adress"></input>
+                                <label for="adress" class="col-form-label"><i class="bi bi-building p-1"></i>Adress:</label>
+                                <input class="form-control" id="adress" placeholder="Adress"></input>
                             </div>
                             <div class="mb-3">
-                                <label for="subject" class="col-form-label">Subject:</label>
-                                <input class="form-control" id="subject"></input>
+                                <label for="subject" class="col-form-label"><i class="bi bi-card-heading p-1"></i>Subject:</label>
+                                <input class="form-control" id="subject" placeholder="Subject"></input>
                             </div>
                             <div class="mb-3">
-                                <label for="message" class="col-form-label">Type your message here:</label>
-                                <textarea class="form-control" id="message"></textarea>
+                                <label for="message" class="col-form-label"><i class="bi bi-card-text p-1"></i>Type your message here:</label>
+                                <textarea class="form-control" id="message" placeholder="Type your message  here"></textarea>
                             </div>
                         </form>
                     </div>
@@ -108,7 +111,7 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="usernamePasswordModalLabel">Enter your username and password</h5>
+              <h5 class="modal-title" id="usernamePasswordModalLabel"><i class="bi bi-key-fill p-2"></i>Enter your username and password</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -124,7 +127,55 @@
               </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-success">Send message</button>
+                <button type="button" class="btn btn-success">Submit</button>
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- REGISTER NEW USER FORM -->
+    <div class="modal fade" id="register" tabindex="-1" aria-labelledby="registerNewUserLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="registerNewUserLabel">Register</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row"> 
+                    <div class="col-lg">
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="col-form-label"><i class="bi bi-person-fill p-1"></i>Name:</label>
+                                <input type="text" class="form-control" id="name" placeholder="Name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="col-form-label"><i class="bi bi-envelope-fill p-1"></i>Email:</label>
+                                <input class="form-control" id="email" placeholder="Email"></input>
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="col-form-label"><i class="bi bi-key-fill p-1"></i>Password:</label>
+                                <input class="form-control" id="email" placeholder="Password"></input>
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="col-form-label"><i class="bi bi-key-fill p-1"></i>Repeat Password:</label>
+                                <input class="form-control" id="email" placeholder="Repeat Password"></input>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="col-form-label"><i class="bi bi-telephone-fill p-1"></i>Phone:</label>
+                                <input class="form-control" id="phone" placeholder="Phone"></input>
+                            </div>
+                            <div class="mb-3">
+                                <label for="adress" class="col-form-label"><i class="bi bi-building p-1"></i>Adress:</label>
+                                <input class="form-control" id="adress" placeholder="Adress"></input>
+                            </div>
+                        </form>
+                    </div>   
+                </div>   
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success">Submit</button>
                 <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
             </div>
           </div>
@@ -137,12 +188,12 @@
             <h1 class="display-1 mt-3 pt-3 text-light text-shadow">
                 Oskar Miketič
             </h1>
-            <button type="button" class="btn mt-5 p-2">
+            <a href="#Work" class="btn mt-5 p-2" role="button" aria-disabled="false">
                 Explore my work
-            </button><br>
-            <button type="button" class="btn mt-5 p-2">
+            </a><br>
+            <a href="#About" class="btn mt-5 p-2" role="button" aria-disabled="false">
                 Learn more
-            </button>            
+            </a>           
         </div>    
     </header>
     
@@ -183,6 +234,81 @@
             </div>
         </div>
     </section>
+
+    <!-- EXPLORE MY WORK -->
+    <section id="Work" class="container" style="background-color: rgba(227, 222, 216);">
+        <div class="row m-0">
+            <div class="col-lg-6">
+                <h1 class="p-2 m-2">
+                    Work
+                </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 p-1">
+                <div class="card text-light bg-dark mb-3">
+                    <img src="https://source.unsplash.com/weekly?cake" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-lg-4 p-1">
+                <div class="card text-light bg-dark mb-3">
+                    <img src="https://source.unsplash.com/weekly?car" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-lg-4 p-1">
+                <div class="card text-light bg-dark mb-3">
+                    <img src="https://source.unsplash.com/weekly?cow" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                  </div>
+            </div>
+        </div> 
+
+        <div class="row">
+            <div class="col-lg-4 p-1">
+                <div class="card text-light bg-dark mb-3">
+                    <img src="https://source.unsplash.com/weekly?space" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-lg-4 p-1">
+                <div class="card text-light bg-dark mb-3">
+                    <img src="https://source.unsplash.com/weekly?process" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-lg-4 p-1">
+                <div class="card text-light bg-dark mb-3">
+                    <img src="https://source.unsplash.com/weekly?robot" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                  </div>
+            </div>
+        </div> 
+    </section>
+
 
     <!-- FOOTER SECTION -->
     <footer class="container mt-2 pt-2" style="text-align: center;">
